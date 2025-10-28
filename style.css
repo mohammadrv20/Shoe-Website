@@ -1,0 +1,548 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    height: 7rem;
+    background-color: white;
+}
+
+nav p {
+    font-size: 6rem;
+    color: rgb(174, 0, 153);
+    font-weight: 600;
+}
+
+nav:hover {
+    cursor: pointer;
+}
+
+nav span {
+    color: rgb(95, 0, 185);
+}
+
+nav a {
+    font-size: 2rem;
+    color: black;
+    text-decoration: none;
+    padding: 1rem;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    color: rgb(95, 0, 185);
+    font-weight: 500;
+    padding: 2rem;
+}
+
+.icons i {
+    font-size: 2rem;
+    margin: 0 0.6rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.icons i:hover {
+    color: rgb(95, 0, 185);
+    padding: 0.5rem;
+}
+
+.under-nav {
+    background-image: url(./image/bg1.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 100vh;
+}
+
+.nike-collection {
+    top: 25rem;
+    font-size: 8rem;
+    position: relative;
+    left: 5rem;
+    background: linear-gradient(90deg, #c72092, #6c14d0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nike-collection span {
+    font-size: 10rem;
+}
+
+.nike-collection-para {
+    left: 5rem;
+    position: relative;
+    top: 28rem;
+    font-size: 2rem;
+    text-align: justify;
+}
+
+.image-area {
+    margin-top: 5rem;
+}
+
+.image-area img {
+    transition: 0.8s;
+}
+
+.image-area img:hover {
+    transform: scale(1.03);
+}
+
+.first-button {
+    display: inline-block;
+    position: relative;
+    top: -8rem;
+    left: 8rem;
+    width: 13rem;
+    height: 4rem;
+    border-radius: 4rem;
+    border: none;
+    color: white;
+    background: linear-gradient(to right, #c72092, #6c14d0)
+}
+
+.first-button:hover {
+    cursor: pointer;
+}
+
+.first-button:hover i {
+    cursor: pointer;
+    transform: translateX(7px);
+    cursor: pointer;
+}
+
+.first-button i {
+    padding-left: 0.5rem;
+    transition: 1s;
+}
+
+.first-button i:hover {
+    transform: translateX(7px);
+    cursor: pointer;
+}
+
+.main h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 15rem;
+    font-weight: 700;
+    font-size: 6rem;
+    background: linear-gradient(to right, #c72092, #6c14d0);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.products-content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    position: relative;
+    top: 15rem;
+    height: 100vh;
+}
+
+.product {
+    margin: 3rem;
+    background-color: rgb(249, 249, 249);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0rem 0rem 0.8rem 0rem #c727eb;
+    border-radius: 1rem;
+    transition: 0.3s;
+}
+
+.product:hover {
+    box-shadow: 0rem 0rem 1.5rem 0rem #c727eb
+}
+
+.product img {
+    height: 20rem;
+    margin: 3rem;
+    transition: 0.3s;
+}
+
+.product img:hover {
+    transform: scale(1.1);
+
+}
+
+
+
+.product h2 {
+    font-size: 3rem;
+    margin: 2rem;
+}
+
+.product p {
+    font-size: 2rem;
+    text-align: center;
+    color: rgb(178, 178, 178);
+}
+
+.product button {
+    margin: 2rem 0rem 5rem 0rem;
+    height: 4rem;
+    width: 12rem;
+    background: linear-gradient(to right, #c72092, #6c14d0);
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+}
+
+.product button {
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 1rem;
+}
+
+.product button:hover {
+    box-shadow: 0 0 0.8rem 0rem #c72092;
+}
+
+.product-stars {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    gap: 0.5rem;
+}
+
+.product-stars i {
+    font-size: 1.5rem;
+    color: rgb(255, 187, 0);
+}
+
+.price {
+    font-weight: 700;
+    color: black;
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.webaboutheader {
+    position: relative;
+    top: 64rem;
+    text-align: center;
+    font-size: 6rem;
+    font-weight: 700;
+}
+
+.webaboutheader span {
+    background: linear-gradient(to right, #c72092, #6c14d0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.webabout-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: 65rem;
+}
+
+.webabout-images {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.little-red-shoes img {
+    height: 8.5rem;
+    width: 13rem;
+    box-shadow: 0rem 0rem 1rem 0rem rgb(53, 53, 53);
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.little-red-shoes img:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.little-red-shoes {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.little-red-shoes img {
+    background: linear-gradient(to right, #c72092, #6c14d0);
+    border-radius: 1rem;
+}
+
+.big-red-shoe img {
+    height: 40rem;
+    padding: 3rem;
+    border: 0.3rem solid #6c14d0;
+    border-radius: 3rem;
+    box-shadow: 0rem 0rem 1rem 0rem #6c14d0;
+}
+
+.webabout-para {
+    font-size: 1.8rem;
+    border: 0.3rem solid #c72092;
+    padding: 2.5rem;
+    border-radius: 2rem;
+    box-shadow: 0rem 0rem 1rem 0rem #c72092;
+    background: linear-gradient(to right, #c72092, #6c14d0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 2.3rem;
+}
+
+.underwebabout-button {
+    position: relative;
+    top: 70rem;
+    left: 50%;
+    width: 12rem;
+    height: 4rem;
+    border: none;
+    background-color: white;
+    border: 0.3rem solid #c72092;
+    box-shadow: 0rem 0rem 1rem 0rem #c72092;
+}
+
+.reviews p {
+    position: relative;
+    top: 80rem;
+    font-size: 7rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.reviews span {
+    background: linear-gradient(to right, #c72092, #6c14d0);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+}
+
+.reviews-boxes div {
+    background-color: rgb(238, 238, 238);
+    border-radius: 1rem;
+    box-shadow: 0rem 0rem 0.5rem 0rem rgb(181, 181, 181);
+    margin: 2rem;
+}
+
+.reviews-boxes img {
+    height: 6.5rem;
+    width: 6.5rem;
+    margin: 2rem;
+    border-radius: 50%;
+    box-shadow: 0rem 0rem 1rem 0rem rgb(131, 131, 131);
+    transition: 0.5s;
+}
+
+.reviews-boxes img:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.reviews-boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: relative;
+    top: 90rem;
+}
+
+.reviews-boxes div span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.reviews-boxes div span p {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.reviews-boxes div p {
+    font-size: 1.8rem;
+    margin-left: 2.3rem;
+    line-height: 2.4rem;
+    margin-bottom: 2rem;
+}
+
+.services p {
+    position: relative;
+    top: 95rem;
+    text-align: center;
+    font-size: 6rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.services span {
+    background: linear-gradient(to right, #6c14d0, #c72092);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.services-content {
+    position: relative;
+    top: 98rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.services-content div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3.5rem;
+}
+
+.services-content div i {
+    font-size: 7rem;
+    color: orange;
+}
+
+.services-content div h3 {
+    font-size: 2rem;
+    margin: 3rem 0rem 1rem 0rem
+}
+
+.services-content div p {
+    font-size: 2rem;
+    text-align: center;
+    color: rgb(132, 132, 132);
+}
+
+.wellcomeback {
+    width: 100%;
+    height: 80rem;
+    position: relative;
+    top: 100rem;
+    background-image: url(./image/loging_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.wellcomeback img {
+    height: 65rem;
+    transition: 2s;
+}
+
+.wellcomeback img:hover {
+    transform: scale(1.05);
+}
+
+.wellcomeback .inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-right: 10rem;
+    margin-bottom: 10rem;
+}
+
+.wellcomeback h3 {
+    font-size: 3rem;
+}
+
+.wellcomeback input {
+    width: 38rem;
+    height: 5rem;
+    text-indent: 3rem;
+    background-color: transparent;
+    border: 0.3rem solid #6c14d0;
+    border-radius: 1rem;
+    color: black;
+    outline: none;
+}
+
+.wellcomeback button {
+    border: none;
+    width: 38rem;
+    height: 4rem;
+    border-radius: 1 rem;
+    background: linear-gradient(to right, #c72092, #6c14d0);
+    color: white;
+    font-size: 2rem;
+    border-radius: 1rem;
+}
+
+.wellcomeback button:hover {
+    cursor: pointer;
+}
+
+footer {
+    position: relative;
+    top: 110rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(235, 235, 235);
+    margin-bottom: 3rem;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+footer div h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: rgb(28, 28, 131);
+    margin-top: 2rem;
+}
+
+footer div a {
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+}
+
+footer div input {
+    background-color: rgb(213, 213, 213);
+    border: none;
+    width: 18rem;
+    height: 3rem;
+    border-radius: 1rem;
+    text-indent: 1rem;
+}
+
+footer div button {
+    height: 3rem;
+    width: 8rem;
+    color: white;
+    background: linear-gradient(to right, #c72092, #6c14d0);
+    border: none;
+    border-radius: 1rem;
+}
